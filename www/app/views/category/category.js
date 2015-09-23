@@ -5,10 +5,14 @@
 (function() {
   'use strict';
   angular.module('starter').config(function($stateProvider) {
-    $stateProvider.state('category', {
+    $stateProvider.state('app.category', {
       url: '/category',
-      templateUrl: 'app/views/category/category.html',
-      controller: 'CategoryCtrl'
+      views: {
+        'menuContent': {
+          templateUrl: 'app/views/category/category.html',
+          controller: 'CategoryCtrl'
+        }
+      }
     });
   });
 
