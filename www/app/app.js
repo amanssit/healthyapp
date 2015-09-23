@@ -9,12 +9,14 @@
 (function() {
   'use strict';
 
-  angular.module('starter', ['ionic','ui.router'])
+  angular.module('starter', ['ionic'])
 
     .run(function($ionicPlatform) {
+      console.log('run')
       $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
+        console.log('ionic ready')
         if (window.cordova && window.cordova.plugins.Keyboard) {
           cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
           cordova.plugins.Keyboard.disableScroll(true);
@@ -28,6 +30,7 @@
     })
 
     .config(function($stateProvider, $urlRouterProvider,$locationProvider) {
+      console.log('config')
       $stateProvider
 
         .state('app', {
@@ -39,12 +42,21 @@
 
         .state('app.search', {
           url: '/search',
-          templateUrl: 'app/search.html'
+          views: {
+            'menuContent': {
+              templateUrl: 'app/search.html'
+            }
+          }
         })
 
         .state('app.browse', {
           url: '/browse',
-          templateUrl: 'app/browse.html'
+          views: {
+            'menuContent': {
+              templateUrl: 'app/browse.html'
+            }
+          }
+
         })
 
       // if none of the above states are matched, use this as the fallback
@@ -96,7 +108,7 @@
   });
 
   angular.module('starter').controller('MainCtrl', function($scope, $ionicModal, $timeout,$http) {
-
+    console.log('MainCtrl')
     //$rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
     //  $rootScope.staticCarousel = false;
     //  return $rootScope.showGif = pageFactory.busy;
