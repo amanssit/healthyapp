@@ -1,0 +1,10 @@
+<ion-view view-title="Home" positive>
+  <ion-content>
+    <div class="mygrid" ng-href="#/app/category/{{category.id}}" ng-repeat="category in categores">
+      <a href="#/app/category/{{category.id}}">
+        <img style="width:100%" ng-src="http://android.par-ken.com/healthyalsi/product/{{category.image}}">
+        {{category.categoryName}}
+      </a>
+    </div>
+  </ion-content>
+</ion-view>
