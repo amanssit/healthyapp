@@ -1,0 +1,25 @@
+/**
+ * Created by ManjeshV on 9/23/2015.
+ */
+
+(function() {
+  'use strict';
+  angular.module('starter').config(function($stateProvider) {
+    $stateProvider.state('category', {
+      url: '/category',
+      templateUrl: 'app/views/products/products.html',
+      controller: 'Category'
+    });
+  });
+
+  'use strict';
+
+  angular.module('starter').controller('CategoryCtrl', function($scope, $rootScope, $location, $stateParams,$http ) {
+    $http.get("http://android.par-ken.com/healthyalsi/getCategory.php")
+      .success(function(response) {
+
+        $scope.categores=response;
+      });
+  });
+
+}).call(this);
