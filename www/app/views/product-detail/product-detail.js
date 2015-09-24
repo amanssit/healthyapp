@@ -4,10 +4,14 @@
     console.log('ProductDetail routing')
     $stateProvider.state('app.product-detail', {
       url: '/product-detail',
-      templateUrl: 'app/views/product-detail/product-detail.html',
-      controller: 'ProductDetailCtrl'
+      views: {
+        'menuContent': {
+          templateUrl: 'app/views/product-detail/product-detail.html',
+          controller: 'ProductDetailCtrl'
+        }
+      }
     })
-      
+
   });
 
 

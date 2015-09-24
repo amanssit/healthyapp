@@ -59,9 +59,14 @@
 
         })
 
+
+
       // if none of the above states are matched, use this as the fallback
-      $urlRouterProvider.otherwise('/app');
+      $urlRouterProvider.otherwise('/app/category');
       //$locationProvider.html5Mode(true);
+    })
+    .constant("APP_CONFIG", {
+      baseApiUrl: "http://android.par-ken.com/healthyalsi"
     })
 
   'use strict';
