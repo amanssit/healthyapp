@@ -7,7 +7,15 @@
       templateUrl: 'app/views/products/products.html',
       controller: 'ProductsCtrl'
     })
+<<<<<<< HEAD
   
+=======
+      .state('app.products-by-id', {
+        url: '/products/:cateid',
+        templateUrl: 'app/views/products/products.html',
+        controller: 'ProductsCtrl'
+      });
+>>>>>>> d709baf736f3b732691ffffb5199253d92ccef16
   });
 
 
