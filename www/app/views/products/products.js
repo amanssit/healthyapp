@@ -6,8 +6,12 @@
 
       .state('app.products', {
         url: '/products/:cateid',
-        templateUrl: 'app/views/products/products.html',
-        controller: 'ProductsCtrl'
+        views: {
+          'menuContent': {
+            templateUrl: 'app/views/products/products.html',
+            controller: 'ProductsCtrl'
+          }
+        }
       });
 
   });
