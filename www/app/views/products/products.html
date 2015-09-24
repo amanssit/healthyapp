@@ -1,31 +1,28 @@
 <ion-view view-title="Product">
   <ion-content>
-  <div ng-repeat="product in products">
-    <div class="myitem" >
-    <a href="#">
-    	
-   
-    	<div class="itemimg" ng-href="#/app/product/{{product.id}}"><img style="width:98%;height:65px" ng-src="http://android.par-ken.com/healthyalsi/product/{{product.image}}"></div>
-    	 </a>
-    	<div class="itemdata">
-    		<div class="itemname">
-    			<b>{{product.productName}}</b>
-    		</div>
-    		<div class="itemdetals">
-    			<div class="itemdes">
-    	
-    	<p>{{product.size}}</p>
-    	<p><b>Rs. {{product.newprice}}</b> <span class="oldprice">Rs. {{product.price}}</span></p>
-    	</div>
-    	<div class="itemaction">
-    		<div class="myaction"><p><img class="mybtn" src="http://android.par-ken.com/healthyalsi/img/sub.png"><img ng-click="addproduct({{product.id}})" class="mybtn" src="http://android.par-ken.com/healthyalsi/img/add.png">1</p></div>
-
-    	</div>
-    		</div>
-    	</div>
-    	
-    	
-    </div>
+    <div ng-repeat="product in products">
+      <div class="myitem">
+        <a href="#">
+          <div class="itemimg" ng-href="#/app/product/{{product.id}}"><img style="width:98%;height:65px" ng-src="http://android.par-ken.com/healthyalsi/product/{{product.image}}">
+          </div>
+        </a>
+        <div class="itemdata">
+          <div class="itemname">
+            <b>{{product.productName}}</b>
+          </div>
+          <div class="itemdetals">
+            <div class="itemdes">
+              <p>{{product.size}}</p>
+              <p><b>Rs. {{product.newprice}}</b> <span class="oldprice">Rs. {{product.price}}</span></p>
+            </div>
+            <div class="itemaction">
+              <div class="myaction"><p><img class="mybtn" src="http://android.par-ken.com/healthyalsi/img/sub.png"><img
+                ng-click="addproduct({{product.id}})" class="mybtn"
+                src="http://android.par-ken.com/healthyalsi/img/add.png">1</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </ion-content>
 </ion-view>
