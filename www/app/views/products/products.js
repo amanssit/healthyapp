@@ -2,20 +2,14 @@
   'use strict';
   angular.module('starter').config(function($stateProvider) {
     console.log('Products routing')
-    $stateProvider.state('app.products', {
-      url: '/products',
-      templateUrl: 'app/views/products/products.html',
-      controller: 'ProductsCtrl'
-    })
-<<<<<<< HEAD
-  
-=======
-      .state('app.products-by-id', {
+    $stateProvider
+
+      .state('app.products', {
         url: '/products/:cateid',
         templateUrl: 'app/views/products/products.html',
         controller: 'ProductsCtrl'
       });
->>>>>>> d709baf736f3b732691ffffb5199253d92ccef16
+
   });
 
 
