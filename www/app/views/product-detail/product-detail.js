@@ -3,11 +3,7 @@
   angular.module('starter').config(function($stateProvider) {
     console.log('ProductDetail routing')
     $stateProvider.state('app.product-detail', {
-<<<<<<< HEAD
       url: '/product-detail/:proid',
-=======
-      url: '/product-detail',
->>>>>>> 1c1ba1346af6a4ad5fd918bdfc76a98c987b6a67
       views: {
         'menuContent': {
           templateUrl: 'app/views/product-detail/product-detail.html',
