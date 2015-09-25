@@ -39,6 +39,7 @@
     <script src="app/views/category/category.js"></script>
     <script src="app/views/product-detail/product-detail.js"></script>
     <script src="app/views/category-detail/category-detail.js"></script>
+    <script src="app/views/cart-items/cart-items.js"></script>
 
 
     <!-- script src="components/footer/footer.js"></script>
@@ -48,17 +49,15 @@
 
   <body ng-app="starter" >
     <ion-nav-view></ion-nav-view>
-     <ion-footer-bar align-title="left" class="bar-assertive" hide-tabs>
-    
-  <div id="cfooter">
-  <i style="font-size:30px" class="icon ion-android-cart"></i><span>3</span>
-   
- 
-  <h1 class="title">Rs. 540.0</h1>
-  <div class="buttons">
-    <a ng-href="#/app/cart-items/" class="button">Check Out</a>
-  </div>
-   </div>
-</ion-footer-bar>
+    <ion-footer-bar align-title="left" class="bar-assertive" hide-tabs>
+      <div id="cfooter">
+        <i style="font-size:30px" class="icon ion-android-cart"></i>
+        <span>3</span>
+        <h1 class="title">Rs. 540.0</h1>
+        <div class="buttons">
+          <a ng-href="#/app/cart-items" class="button">Check Out</a>
+        </div>
+      </div>
+    </ion-footer-bar>
   </body>
 </html>

@@ -43,7 +43,7 @@ var db;
         .state('app', {
           url: '/app',
           abstract: true,
-          templateUrl: 'app/menu.html',
+          templateUrl: 'app/master.html',
           controller: 'AppCtrl'
         })
 
