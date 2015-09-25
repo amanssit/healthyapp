@@ -1,32 +1,39 @@
-<ion-view view-title="Product">
+<ion-view view-title="Product Details">
   <ion-content>
-  <div ng-repeat="product in products">
-    <div class="myitem" >
-    <h1> Hello</h1>
-    <a href="#">
-    	
-   
-    	<div class="itemimg" ng-href="#/app/product/{{product.id}}"><img style="width:98%;height:65px" ng-src="http://android.par-ken.com/healthyalsi/product/{{product.image}}"></div>
-    	 </a>
-    	<div class="itemdata">
-    		<div class="itemname">
-    			<b>{{product.productName}}</b>
-    		</div>
-    		<div class="itemdetals">
-    			<div class="itemdes">
-    	
-    	<p>{{product.size}}</p>
-    	<p><b>Rs. {{product.newprice}}</b> <span class="oldprice">Rs. {{product.price}}</span></p>
-    	</div>
-    	<div class="itemaction">
-    		<div class="myaction"><p><img class="mybtn" src="http://android.par-ken.com/healthyalsi/img/sub.png"><img ng-click="addproduct({{product.id}})" class="mybtn" src="http://android.par-ken.com/healthyalsi/img/add.png">1</p></div>
+  <div class="list card">
 
-    	</div>
-    		</div>
-    	</div>
-    	
-    	
-    </div>
-    </div>
+  <div class="item item-avatar">
+    <img ng-src="http://android.par-ken.com/healthyalsi/product/patato.jpg">
+    <h2>Product Name</h2>
+    <p>500 gm</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" ng-src="http://android.par-ken.com/healthyalsi/product/patato.jpg">
+      <div class="item tabs tabs-secondary">
+      <a class="tab-item" href="#">
+      	<span style="font-size:13px"><b>Rs. 560.0</b></span>
+      </a>
+    <a class="tab-item" href="#">
+     <img style="margin-top:25%" class="mybtn" src="http://android.par-ken.com/healthyalsi/img/sub.png">
+    </a>
+    <a class="tab-item" href="#">
+      <span style="font-size:13px"><b>2</b></span>
+    </a>
+    <a class="tab-item" href="#">
+      <img style="margin-top:25%" ng-click="addproduct({{product.id}})" class="mybtn" 
+                src="http://android.par-ken.com/healthyalsi/img/add.png">
+    </a>
+  </div>
+    <p>
+      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </p>
+   
+  </div>
+
+ 
+</div>
   </ion-content>
 </ion-view>
