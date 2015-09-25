@@ -1,4 +1,4 @@
 ### Healthyapp
 
-changes
+added some views
 E:\ionicWork\healthy\healthy\healthyapp>
