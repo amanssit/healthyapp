@@ -18,8 +18,10 @@
 
   'use strict';
 
-  angular.module('starter').controller('CartItemsCtrl', function($scope, $rootScope, $location, $stateParams,$http ) {
+  angular.module('starter').controller('CartItemsCtrl', function($scope, $rootScope, $location, $stateParams,$http,LS ) {
     console.log('CartItemsCtrl controller')
+    LS.setObject("cartData",[{id:1,name:"manjesh"}])
+
 
   });
 
