@@ -22,7 +22,7 @@
 
   angular.module('starter').controller('AddressCtrl', function($scope, $rootScope, $location, $stateParams,$http) {
     console.log('AddressCtrl controller')
-
-   
+    // Use webstorm or any tool shows javascript errors. Otherwise simply you will waste time
+   })
 
 }).call(this);
